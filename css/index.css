@@ -186,7 +186,8 @@ body{
     margin-right: 10px;
     border-radius: 0;
     height: 37px;
-    width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-style: solid;
     border-color: #282828;
     color: #282828;
