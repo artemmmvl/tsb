@@ -346,6 +346,7 @@ form button:hover{
     }
     .line{
         width: calc(100% + 50px);
+        margin-left: -25px;
     }
     .review-right{
         margin-left: 20%;
