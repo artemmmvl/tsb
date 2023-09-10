@@ -414,8 +414,9 @@ body{
     position: relative;
     overflow: hidden;
     margin-right: 3%;
-    border-color: gainsboro;
-    border-width: 2px;
+    border-color: #FFC84D;
+    border-width: 1px;
+   
     border-style: solid;
     border-radius: 50%;
     padding: 10px;
@@ -636,6 +637,18 @@ body{
     }
 }
 @media (max-width: 650px) {
+    .contact>div {
+        margin-bottom: 30px;
+    }
+    .contact p {
+        font-size: 25px;
+    }
+    .email a{
+        font-size: 20px;
+    }
+    .address a{
+        font-size: 17px;
+    }
     .menu-header{
         position: fixed;
         top: -200%;
