@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Товар</title>
+  <link rel="stylesheet" href="css/service.css">
+
+</head>
+<body>
+<div class="header-div">
+  <div class="name"><p>Окрашивание ресниц</p></div>
+  <div class="close"><div></div></div>
+</div>
+<div class="service">
+  <div class="gallery-images">
+    <div class="container-main-img">
+      <div class="left-arrow">
+        <svg  focusable="false" style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline fill="none" stroke="#171717" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5"></polyline></svg>
+      </div>
+      <div class="main-img">
+        <img src="img/service/3945b5e6-1175-42a0-a8d8-dbf43f3582dc.foto3.jpg" alt="">
+      </div>
+      <div class="right-arrow">
+        <svg  focusable="false" style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline fill="none" stroke="#171717" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5"></polyline></svg>
+
+      </div>
+
+    </div>
+    <div class="all-images" >
+      <div class="img">
+        <img src="img/service/3945b5e6-1175-42a0-a8d8-dbf43f3582dc.foto3.jpg" alt="">
+      </div>
+      <div class="img">
+        <img src="img/service/8ba8a0a0-c87d-486d-9294-0f0aa44900c3.IMG_0139.JPG" alt="">
+      </div>
+      <div class="img">
+        <img src="img/service/fa92aa82-f65f-47e8-bae1-ee6b35545268.IMG_0152.JPG" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="info-about-service">
+    <div class="name">Окрашивание ресниц</div>
+    <div class="price">15 р</div>
+    <div class="description"></div>
+    <div class="button-for-appointment">
+      <a href="appointments.html">
+        Записаться
+      </a>
+    </div>
+  </div>
+</div>
+<script>
+  let block_imgs=document.querySelectorAll(".all-images .img")
+  console.log(block_imgs)
+  let rightArrow=document.querySelector(".right-arrow")
+  let leftArrow=document.querySelector(".left-arrow")
+  let indexFoto=0
+  rightArrow.addEventListener("click",function () {
+    block_imgs[indexFoto].style.borderStyle="none"
+    indexFoto++;
+
+    if(indexFoto===block_imgs.length){
+      indexFoto=0
+    }
+    block_imgs[indexFoto].style.borderStyle="solid"
+
+    document.querySelector(".main-img img").src=block_imgs[indexFoto].querySelector("img").src
+  })
+  leftArrow.addEventListener("click",function () {
+    block_imgs[indexFoto].style.borderStyle="none"
+
+    indexFoto--;
+    if(indexFoto<0){
+      indexFoto=block_imgs.length+indexFoto
+    }
+    block_imgs[indexFoto].style.borderStyle="solid"
+
+    document.querySelector(".main-img img").src=block_imgs[indexFoto].querySelector("img").src
+  })
+  for(let i=0;i<block_imgs.length;i++){
+    block_imgs[i].onclick=function () {
+      block_imgs[indexFoto].style.borderStyle="none"
+
+      indexFoto=i
+      block_imgs[indexFoto].style.borderStyle="solid"
+
+      document.querySelector(".main-img img").src=this.querySelector("img").src
+    }
+  }
+  document.querySelector(".button-for-appointment").onclick=function (){
+    window.location.href=this.querySelector("a").href
+  }
+  document.querySelector(".close").onclick=function(){
+    history.back()
+  }
+
+</script>
+</body>
+</html>

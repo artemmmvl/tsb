@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Запись</title>
+    <link rel="stylesheet" href="css/add-appointment.css">
+
+</head>
+<body>
+<div class="header-div">
+    <div class="name"><p>Запись</p></div>
+    <div class="close"><div></div></div>
+</div>
+<form class="form-for-add-appointment" action="/appointments/new" method="post">
+
+    <fieldset class="about-services-fieldset">
+
+        <div class="info-about-service">
+            <input class="radio-service"  type="radio" value="152"
+                   id="service" name="serviceId" checked="checked">
+            <div class="img-service-div">
+                <img src="img/service/eb82726b-6271-469c-a08a-e82412777362.IMG_0152.JPG">
+            </div>
+            <div class="text-about-service">
+                <div class="name">Коррекция бровей пинцетом, воском</div>
+                <div class="price">25 Br</div>
+            </div>
+            <div class="change-service">
+                <img src="img/page/change.png">
+            </div>
+            <div class="select-service">
+                <a href="/appointments/new?service=152"><img src="img/page/select.png"></a>
+            </div>
+
+        </div>
+
+        <div class="info-about-service">
+            <input class="radio-service"  type="radio" value="153"
+                   id="service" name="serviceId">
+            <div class="img-service-div">
+                <img src="img/service/17c43976-4cf3-495f-bfb9-24ff1bcac6ff.foto2.jpg">
+            </div>
+            <div class="text-about-service">
+                <div class="name">Окрашивание бровей и коррекция пинцетом, воском</div>
+                <div class="price">35 Br</div>
+            </div>
+            <div class="change-service">
+                <img src="img/page/change.png">
+            </div>
+            <div class="select-service">
+                <a href="/appointments/new?service=153"><img src="img/page/select.png"></a>
+            </div>
+
+        </div>
+
+        <div class="info-about-service">
+            <input class="radio-service"  type="radio" value="154"
+                   id="service" name="serviceId">
+            <div class="img-service-div">
+                <img src="img/service/3945b5e6-1175-42a0-a8d8-dbf43f3582dc.foto3.jpg">
+            </div>
+            <div class="text-about-service">
+                <div class="name">Окрашивание ресниц</div>
+                <div class="price">15 Br</div>
+            </div>
+            <div class="change-service">
+                <img src="img/page/change.png">
+            </div>
+            <div class="select-service">
+                <a href="/appointments/new?service=154"><img src="img/page/select.png"></a>
+            </div>
+
+        </div>
+
+        <div class="info-about-service">
+            <input class="radio-service"  type="radio" value="155"
+                   id="service" name="serviceId">
+            <div class="img-service-div">
+                <img src="img/service/c5d68cd4-c3bd-49d4-b3fe-3f2f8fad113f.IMG_0098.JPG">
+            </div>
+            <div class="text-about-service">
+                <div class="name">Окрашивание бровей, коррекция и окрашивание ресниц</div>
+                <div class="price">45 Br</div>
+            </div>
+            <div class="change-service">
+                <img src="img/page/change.png">
+            </div>
+            <div class="select-service">
+                <a href="/appointments/new?service=155"><img src="img/page/select.png"></a>
+            </div>
+
+        </div>
+        <div class="button-select-schedules">
+            <img src="img/page/calendar.png">
+            <div class="text-in-button-select-schedules">
+                <p>Выбрать дату и время</p>
+            </div>
+        </div>
+        <div class="all-schedules">
+            <div class="schedule-in-day" >
+                <tr>
+                    <div class="date-appointment"><p>10 сен</p></div>
+                    <div class="times-appointments" >
+                        <div class="time">
+                            <input type="radio" id="2023-09-10T12:00" value="326" name="schedule">
+                            <div class="time-block">
+                                <p>12:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="radio" id="2023-09-10T14:00" value="327" name="schedule">
+                            <div class="time-block">
+                                <p>14:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="radio" id="2023-09-10T15:00" value="328" name="schedule">
+                            <div class="time-block">
+                                <p>15:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="radio" id="2023-09-10T19:00" value="329" name="schedule">
+                            <div class="time-block">
+                                <p>19:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="radio" id="2023-09-10T20:00" value="330" name="schedule">
+                            <div class="time-block">
+                                <p>20:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="date-appointment"><p>11 сен</p></div>
+                    <div class="times-appointments" >
+                        <div class="time">
+                            <input type="radio" id="2023-09-11T10:00" value="331" name="schedule">
+                            <div class="time-block">
+                                <p>10:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="radio" id="2023-09-11T12:00" value="332" name="schedule">
+                            <div class="time-block">
+                                <p>12:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="radio" id="2023-09-11T13:00" value="333" name="schedule">
+                            <div class="time-block">
+                                <p>13:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="radio" id="2023-09-11T14:00" value="334" name="schedule">
+                            <div class="time-block">
+                                <p>14:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="radio" id="2023-09-11T16:00" value="335" name="schedule">
+                            <div class="time-block">
+                                <p>16:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="radio" id="2023-09-11T19:00" value="336" name="schedule">
+                            <div class="time-block">
+                                <p>19:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </tr>
+            </div>
+        </div>
+        <div class="button-for-send-service-and-date"><p><a>Выбрать</a></p></div>
+
+    </fieldset>
+    <fieldset class="info-about-client">
+        <div class="input-text">
+            <label for="name">Ваше имя и фамилия</label>
+            <input  type="text"  placeholder="Мария Иванова" name="name" id="name">
+        </div>
+        <div class="input-text">
+            <label for="inst">Ник в инстаграмме</label>
+            <input type="text" name="inst" placeholder="nik_example" id="inst">
+        </div>
+        <div class="input-text">
+            <label for="email">Ваш email</label>
+            <input type="text" name="email" placeholder="example@email.com"  id="email">
+        </div>
+        <div class="input-text">
+            <label for="phone">Ваш телефон</label>
+            <input type="tel" name="phone" placeholder="+375 (99) 999-99-99"  id="phone">
+        </div>
+        <div class="input-text">
+            <label for="comment">Комментарий</label>
+            <textarea name="comment" placeholder="Сюда можете написать комментарий к записи" id="comment"></textarea>
+        </div>
+
+        <input type="hidden" name="serviceId" value="152">
+        <input type="hidden" name="username" value="">
+        <div class="send-email">
+            <input type="checkbox"  id="send-email" name="send_email">
+            <div>Я согласен получать напоминание на почту</div>
+        </div>
+        <button class="button-for-send-form">Записаться</button>
+    </fieldset>
+</form>
+<script>
+    let blocks=document.querySelectorAll(".info-about-service")
+    let changeService=document.querySelectorAll(".change-service img")
+    var check=false;
+    for (var i = 0; i < blocks.length; i++) {
+        if (!blocks[i].querySelector('input').checked) {
+            blocks[i].style.display = "none";
+        } else {
+            check=true
+            blocks[i].style.borderStyle = "solid";
+            blocks[i].style.borderColor = "black";
+            blocks[i].style.borderWidth = "2px";
+        }
+        changeService[i].addEventListener("click", function () {
+            for (var i = 0; i < blocks.length; i++) {
+                blocks[i].style.display = "flex";
+                blocks[i].querySelector(".change-service").style.display = 'none';
+                blocks[i].querySelector(".select-service").style.display = 'block';
+            }
+        })
+    }
+    if(!check){
+        // alert(1)
+        document.querySelector("fieldset").innerHTML='<div class=".no-service"><p style="font-size: 30px; font-family: Manrope, Arial, sans-serif; margin-left: 20px;">Услуг нет!</p></div>'
+
+    }
+    var checkOpenAllSchedules=false;
+    document.querySelector(".button-select-schedules").onclick=function (){
+        if(!checkOpenAllSchedules){
+            document.querySelector(".all-schedules").style.display="block"
+            checkOpenAllSchedules=true
+        }
+        else {
+            document.querySelector(".all-schedules").style.display="none"
+            checkOpenAllSchedules=false
+        }
+    }
+    let dates=document.querySelectorAll(".date-appointment")
+    var checkOpenDatesSchedules=new Array(dates.length);
+    console.log(checkOpenDatesSchedules)
+    for(let i=0;i<dates.length;i++){
+        dates[i].addEventListener("click",func.bind(null, i),this)
+
+    }
+    function func (i, event) {
+        block = event.currentTarget
+        console.log(checkOpenDatesSchedules[i])
+        if (!checkOpenDatesSchedules[i]) {
+            block.nextElementSibling.style.display = "flex"
+            block.style.backgroundColor = "rgba(40,40,40,0.7)"
+            block.style.color = "white"
+            block.style.fontWeight = "800"
+
+            checkOpenDatesSchedules[i] = true
+        } else {
+            block.nextElementSibling.style.display = "none"
+            block.style.backgroundColor = "white"
+            block.style.color = "black"
+            block.style.fontWeight = "400"
+
+            checkOpenDatesSchedules[i] = false
+        }
+    }
+    let timeBlocks=document.querySelectorAll(".time-block")
+
+
+    for(let i=0;i<timeBlocks.length;i++){
+        timeBlocks[i].onclick=function (){
+            // alert(1)
+            this.previousElementSibling.checked=true
+            document.querySelector(".button-for-send-service-and-date").style.display="flex"
+
+        }
+
+    }
+    let months=["января","февраля","марта","апреля","мая",
+        "июня","июля","августа","сентября","окрября","ноября","декабря"]
+    document.querySelector(".button-for-send-service-and-date").onclick=function () {
+        radioButtons=document.querySelectorAll(".time input[type=radio]")
+        for(let i=0;i<radioButtons.length;i++){
+            if(radioButtons[i].checked){
+                console.log(radioButtons[i].id.toString().substring(8,10))
+                let s=Number(radioButtons[i].id.toString().substring(8,10))+" "+
+                    months[Number(radioButtons[i].id.toString().substring(5,7))-1]
+                +" | "+radioButtons[i].id.toString().substring(11,16)
+
+                // document.querySelector(".text-in-button-select-schedules p").style.marginTop="20px"
+                document.querySelector(".text-in-button-select-schedules p").innerHTML=s
+            }
+        }        this.style.display="none"
+        document.querySelector(".all-schedules").style.display="none"
+        document.querySelector(".info-about-client").style.display="block"
+        checkOpenAllSchedules=false
+    }
+    document.querySelector(".close").onclick=function(){
+        history.back()
+    }
+
+</script>
+</body>
+</html>

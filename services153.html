@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Товар</title>
+  <link rel="stylesheet" href="css/service.css">
+
+</head>
+<body>
+<div class="header-div">
+  <div class="name"><p>Окрашивание бровей и коррекция пинцетом, воском</p></div>
+  <div class="close"><div></div></div>
+</div>
+<div class="service">
+  <div class="gallery-images">
+    <div class="container-main-img">
+      <div class="left-arrow">
+        <svg  focusable="false" style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline fill="none" stroke="#171717" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5"></polyline></svg>
+      </div>
+      <div class="main-img">
+        <img src="img/service/17c43976-4cf3-495f-bfb9-24ff1bcac6ff.foto2.jpg" alt="">
+      </div>
+      <div class="right-arrow">
+        <svg  focusable="false" style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline fill="none" stroke="#171717" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5"></polyline></svg>
+
+      </div>
+
+    </div>
+    <div class="all-images" >
+      <div class="img">
+        <img src="img/service/17c43976-4cf3-495f-bfb9-24ff1bcac6ff.foto2.jpg" alt="">
+      </div>
+     
+      <div class="img">
+        <img src="img/service/43755d98-e190-4801-a221-852cec387ff9.IMG_1020.JPG" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="info-about-service">
+    <div class="name">Окрашивание бровей и коррекция пинцетом, воском</div>
+    <div class="price">35 р</div>
+    <div class="description"></div>
+    <div class="button-for-appointment">
+      <a href="appointments.html">
+        Записаться
+      </a>
+    </div>
+  </div>
+</div>
+<script>
+  let block_imgs=document.querySelectorAll(".all-images .img")
+  console.log(block_imgs)
+  let rightArrow=document.querySelector(".right-arrow")
+  let leftArrow=document.querySelector(".left-arrow")
+  let indexFoto=0
+  rightArrow.addEventListener("click",function () {
+    block_imgs[indexFoto].style.borderStyle="none"
+    indexFoto++;
+
+    if(indexFoto===block_imgs.length){
+      indexFoto=0
+    }
+    block_imgs[indexFoto].style.borderStyle="solid"
+
+    document.querySelector(".main-img img").src=block_imgs[indexFoto].querySelector("img").src
+  })
+  leftArrow.addEventListener("click",function () {
+    block_imgs[indexFoto].style.borderStyle="none"
+
+    indexFoto--;
+    if(indexFoto<0){
+      indexFoto=block_imgs.length+indexFoto
+    }
+    block_imgs[indexFoto].style.borderStyle="solid"
+
+    document.querySelector(".main-img img").src=block_imgs[indexFoto].querySelector("img").src
+  })
+  for(let i=0;i<block_imgs.length;i++){
+    block_imgs[i].onclick=function () {
+      block_imgs[indexFoto].style.borderStyle="none"
+
+      indexFoto=i
+      block_imgs[indexFoto].style.borderStyle="solid"
+
+      document.querySelector(".main-img img").src=this.querySelector("img").src
+    }
+  }
+  document.querySelector(".button-for-appointment").onclick=function (){
+    window.location.href=this.querySelector("a").href
+  }
+  document.querySelector(".close").onclick=function(){
+    history.back()
+  }
+
+</script>
+</body>
+</html>

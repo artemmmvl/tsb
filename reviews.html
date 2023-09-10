@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>SVIATTSEVA BROWS</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reviews.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="img-logo">
+            <a href="index.html">
+                <img src="img/page/logotip3.png" alt="логотип">
+            </a>
+        </div>
+        <nav class="menu-header">
+            <ul>
+                <li>
+                    <a href="services.html">УСЛУГИ</a>
+                </li>
+                <li>
+                    <a href="education.html">ОБУЧЕНИЕ</a>
+                </li>
+                <li>
+                    <a href="reviews.html">ОТЗЫВЫ</a>
+                </li>
+                <li>
+                    <a href="index.html#contacts">КОНТАКТЫ</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="menu-burger">
+            <div class="before"></div>
+            <div class="center"></div>
+            <div class="after"></div>
+        </div>
+    </div>
+
+</header>
+<div class="open-form">
+    Добавить отзыв
+</div>
+<div class="container-for-form">
+    <form class="form-for-add-review" method="post" action="/reviews/new" enctype="multipart/form-data">
+        <h3>Добавить отзыв</h3>
+        <div class="div-input-text">
+            <label for="name">Имя</label>
+            <input type="text" name="nameUser" value="" id="name">
+        </div>
+        <div class="div-select">
+            <label for="serviceId">Услуга</label>
+            <div class="select-box">
+                <select id="serviceId" required name="serviceId">
+                    <option  selected disabled>Выберите услугу</option>
+                    <tr>
+                        <option value="152">Коррекция бровей пинцетом, воском</option>
+                    </tr>
+                    <tr>
+                        <option value="153">Окрашивание бровей и коррекция пинцетом, воском</option>
+                    </tr>
+                    <tr>
+                        <option value="154">Окрашивание ресниц</option>
+                    </tr>
+                    <tr>
+                        <option value="155">Окрашивание бровей, коррекция и окрашивание ресниц</option>
+                    </tr>
+                    <tr>
+                        <option value="202">Курс</option>
+                    </tr>
+                </select>
+            </div>
+        </div>
+        <div class="div-select">
+            <label for="stars">Оценка</label>
+            <div class="select-box">
+                <select id="stars" required name="stars">
+                    <option selected disabled>Выберите оценку</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <div class="div-input-text">
+            <label for="textReview">Отзыв</label>
+            <textarea name="textReview" id="textReview"></textarea>
+        </div>
+        <div class="div-input-file">
+            <label for="image">Фото</label>
+            <input multiple type="file" name="images" id="image">
+        </div>
+
+<!--            <input type="hidden" th:value="${people} ? ${people.getUsername()} : null" name="people">-->
+        <input class="button-for-send-form" type="submit">
+    </form>
+    <div class="cancel">
+    </div>
+</div>
+<div class="container-for-reviews">
+    <div class="reviews">
+        <div class="review">
+            <div class="top-part-div">
+                <div class="name">Artem</div>
+                <div data-date="2023-09-06" class="date">
+                </div>
+            </div>
+            <div class="stars" data-size="4">
+            </div>
+            <div class="line">
+            </div>
+            <div  class="text">Норм nf fknvdf kjbdf vdkfvn dskvnsd vfkjd vdsfkvs dfvjksnvdf djfnvd fkdfsnv dskbvs dhkvbs jenv dvodnvsn onr knj ve obv ovjeonvdf kdbo vdoro voeboevbekpsjdvjcbfh veonvsd hbnljs doansdjv sdi. a'jbs vjs</div>
+            <div class="img">
+                <div class="left-arrow">
+                    <svg  focusable="false" style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline fill="none" stroke="#171717" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5"></polyline></svg>
+                </div>
+                <div class="imgs" data-size="0">
+                    
+                </div>
+                <div class="right-arrow">
+                    <svg  focusable="false" style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline fill="none" stroke="#171717" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5"></polyline></svg>
+                </div>
+            </div>
+        </div>
+        <div class="review">
+            <div class="top-part-div">
+                <div class="name">Artem</div>
+                <div data-date="2023-09-06" class="date">
+                </div>
+            </div>
+            <div class="stars" data-size="5">
+            </div>
+            <div class="line">
+            </div>
+            <div  class="text">Отличные брови! Очень советую этого мастера! <br>
+Отличные брови! Очень советую этого мастера! <br>
+Отличные брови! Очень советую этого мастера! <br>
+Отличные брови! Очень советую этого мастера!</div>
+            <div class="img">
+                <div class="left-arrow">
+                    <svg  focusable="false" style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline fill="none" stroke="#171717" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5"></polyline></svg>
+                </div>
+                <div class="imgs" data-size="2">
+                    <tr>
+                        <img src="img/reviews/c9863140-3b21-4f1d-90aa-ab8036c6eabc.foto1.jpg">
+                    </tr>
+                    <tr>
+                        <img src="img/reviews/9d9400ca-64ba-4f70-ab26-bc9ff1d568aa.foto2.jpg">
+                    </tr>
+                </div>
+                <div class="right-arrow">
+                    <svg  focusable="false" style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline fill="none" stroke="#171717" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5"></polyline></svg>
+                </div>
+            </div>
+        </div>
+        <div class="review">
+            <div class="top-part-div">
+                <div class="name">Karim</div>
+                <div data-date="2023-09-06" class="date">
+                </div>
+            </div>
+            <div class="stars" data-size="4">
+            </div>
+            <div class="line">
+            </div>
+            <div  class="text">bhhbdvh hfdbvkhbdf dkfshbvjhdsb s'dfbjvdhs v sldhbvs v'svbhd sv dsjbvds vjk sd
+<br><br>
+jfnvh fdhbv dkdbv subv sbv svb khdfbv skbv skvbhd khdbv sdkfhbv</div>
+            <div class="img">
+                <div class="left-arrow">
+                    <svg  focusable="false" style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline fill="none" stroke="#171717" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5"></polyline></svg>
+                </div>
+                <div class="imgs" data-size="1">
+                    <tr>
+                        <img src="img/reviews/dd8ddf34-b129-4782-a406-84085b3b1a17.foto5.jpeg">
+                    </tr>
+                </div>
+                <div class="right-arrow">
+                    <svg  focusable="false" style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline fill="none" stroke="#171717" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5"></polyline></svg>
+                </div>
+            </div>
+        </div>
+        <div class="review">
+            <div class="top-part-div">
+                <div class="name">Artem</div>
+                <div data-date="2023-09-06" class="date">
+                </div>
+            </div>
+            <div class="stars" data-size="1">
+            </div>
+            <div class="line">
+            </div>
+            <div  class="text">nf fknvdf kjbdf vdkfvn dskvnsd vfkjd vdsfkvs dfvjksnvdf djfnvd fkdfsnv dskbvs dhkvbs jenv dvodnvsn onr knj ve obv ovjeonvdf kdbo vdoro voeboevbekpsjdvjcbfh veonvsd hbnljs doansdjv sdi. a'jbs vjs nf fknvdf kjbdf vdkfvn dskvnsd vfkjd vdsfkvs dfvjksnvdf djfnvd fkdfsnv dskbvs dhkvbs jenv dvodnvsn onr knj ve obv ovjeonvdf kdbo vdoro voeboevbekpsjdvjcbfh veonvsd hbnljs doansdjv sdi. a'jbs vjs nf fknvdf kjbdf vdkfvn dskvnsd vfkjd vdsfkvs dfvjksnvdf djfnvd fkdfsnv dskbvs dhkvbs jenv dvodnvsn onr knj ve obv ovjeonvdf kdbo vdoro voeboevbekpsjdvjcbfh veonvsd hbnljs doansdjv sdi. a'jbs vjs</div>
+            <div class="img">
+                <div class="left-arrow">
+                    <svg  focusable="false" style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline fill="none" stroke="#171717" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5"></polyline></svg>
+                </div>
+                <div class="imgs" data-size="0">
+                    
+                </div>
+                <div class="right-arrow">
+                    <svg  focusable="false" style="display: block" viewBox="0 0 7.3 13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline fill="none" stroke="#171717" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 6.5,6.5 0.5,12.5"></polyline></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <address>
+        <div class="about-us-container">
+            <h2 class="h-about-us">Обо мне</h2>
+            <div class="line-h"></div>
+            <div class="text-about-us">
+                Cоздаю и вдохновляю на нешаблонные брови 🪄
+                <br><br>
+                Обуаю натуральным бровям  и продающему визуалу 🪐
+            </div>
+        </div>
+        <div class="naviganion-container">
+            <h2 class="h-nav">Навигация</h2>
+            <div class="line-h"></div>
+            <div class="">
+                <ul class="ul-nav">
+                    <li>
+                        <a href="services.html">Услуги</a>
+                    </li>
+                    <li>
+                        <a href="education.html">Обучение</a>
+                    </li>
+                    <li>
+                        <a href="reviews.html">Отзывы</a>
+                    </li>
+                    <li>
+                        <a href="appointments.html">Запись</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cont-container">
+            <h2 class="h-cont">Контакты</h2>
+            <div class="line-h"></div>
+            <div class="cont">
+                <div class="cont-footer">
+                    <div>
+                        <a href="mailto: sviattsevat@gmail.com">
+                            <img src="img/page/mail.jpeg" height="12">
+                            sviattsevat@gmail.com
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://yandex.ru/maps/157/minsk/house/Zk4YcwJlTkYFQFtpfXR2c3VkYA==/?from=mapframe&ll=27.555731%2C53.874660&source=mapframe&utm_source=mapframe&z=16">
+                            <img src="img/page/geo.png" height="12">
+                            г. Минск, ул. Левкова 43 (4 этаж), 412 кабинет
+                        </a>
+                    </div>
+                </div>
+                <div class="soc-net-footer">
+
+                    <div><a href="https://vk.com/artemvlastyuk"><img src="img/page/vk1.0.png" height="30" width="30"></a>
+                    </div>
+                    <div><a href="https://instagram.com/artemvlastyuk"><img src="img/page/inst1.0.png" height="30" width="30"></a></div>
+                    <div><a href="https://t.me/artemvlastyuk"><img src="img/page/tg1.0.png" height="30" width="30"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </address>
+</footer>
+<script>
+    document.querySelector(".container-for-form").onmouseover=function (evt){
+        cancel=document.querySelector(".cancel")
+        if(evt.target===evt.currentTarget || evt.target===cancel){
+            cancel.style.opacity="1"
+            evt.currentTarget.style.cursor="pointer"
+        }
+        else {
+            cancel.style.opacity="0.7"
+            evt.currentTarget.style.cursor="default"
+        }
+    }
+    document.querySelector(".container-for-form").onclick=function (evt){
+        cancel=document.querySelector(".cancel")
+        if(evt.target===evt.currentTarget || evt.target===cancel){
+            evt.currentTarget.style.display="none"
+            document.body.style.overflow="scroll"
+
+        }
+
+   }
+   document.querySelector(".open-form").onclick=function (){
+        document.querySelector(".container-for-form").style.display="flex"
+       document.body.style.overflow="hidden"
+
+   }
+   arr=document.querySelectorAll(".review")
+   for (let i=0;i<arr.length;i++){
+       if(i%2===0){
+           arr[i].className="review-left"
+       }
+       else {
+           arr[i].className="review-right"
+       }
+   }
+    arrDivStars=document.querySelectorAll(".stars")
+    arrDivDate=document.querySelectorAll(".date")
+    let months=["января","февраля","марта","апреля","мая",
+        "июня","июля","августа","сентября","окрября","ноября","декабря"]
+    for (let i=0;i<arrDivStars.length;i++) {
+        numSize=arrDivStars[i].getAttribute('data-size')
+        date=arrDivDate[i].getAttribute("data-date")
+        let s=Number(date.toString().substring(8,10)) +" "+ months[Number(date.toString().substring(5,7))-1]
+        arrDivDate[i].innerHTML=s
+        for(let j=0; j<numSize;j++)
+        {
+            arrDivStars[i].innerHTML+="<svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 53.867 53.867\" style=\"enable-background:new 0 0 53.867 53.867;\" xml:space=\"preserve\">\n" +
+                "                    <polygon style=\"fill:#EFCE4A;\" points=\"26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 \"/>\n" +
+                "                </svg>"
+
+        }
+    }
+    leftArrow=document.querySelectorAll(".left-arrow")
+    rightArrow=document.querySelectorAll(".right-arrow")
+    imgs=document.querySelectorAll(".imgs")
+    let iPhoto=new Array(imgs.length)
+    let size=new Array(imgs.length)
+    for(let i=0;i<imgs.length;i++){
+        size[i]=imgs[i].getAttribute("data-size")
+        iPhoto[i]=0
+        if(size[i]==1){
+            rightArrow[i].style.display="none"
+        }
+        rightArrow[i].onclick=function (){
+            iPhoto[i]++;
+            console.log(iPhoto[i])
+
+            leftArrow[i].style.display="block"
+            if(iPhoto[i] == (size[i]-1)){
+                rightArrow[i].style.display="none"
+            }
+            imgs[i].style.left=(-100)*iPhoto[i]+'%'
+        }
+        leftArrow[i].onclick=function (){
+            iPhoto[i]--;
+            rightArrow[i].style.display="block"
+            if(iPhoto[i] === 0){
+                leftArrow[i].style.display="none"
+            }
+            imgs[i].style.left=(-100)*iPhoto[i]+'%'
+        }
+    }
+
+
+
+</script>
+<script src="/script/menu-header.js"></script>
+
+</body>
+</html>
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Отзывы</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--ОТЗЫВЫ-->
+<!--<div th:each="cur:${reviews}">-->
+<!--    <form th:method="delete" th:action="@{reviews/delete/{id}(id=${cur.getId()})}">-->
+<!--    <p th:text="${cur.getId()}+' '+${cur.getName()}+' '+${cur.getReviewText()}"></p>-->
+<!--    <input type="submit" value="-">-->
+<!--    </form>-->
+<!--</div>-->
+<!--<form method="post" action="/reviews/new" enctype="multipart/form-data">-->
+<!--    <label for="stars">Звезды</label>-->
+<!--    <input type="text" id="stars" name="stars">-->
+<!--    <label for="name">Имя</label>-->
+<!--    <input type="text" name="name" th:value="${people} ? ${people.getFirstname()} : ''" id="name">-->
+<!--    <label for="textReview">Текст</label>-->
+<!--    <textarea name="textReview" id="textReview"></textarea>-->
+<!--    <label for="image">Фото:</label>-->
+<!--    <input type="file" name="image" id="image">-->
+<!--    <input type="hidden" th:value="${people} ? ${people.getUsername()} : null" name="people">-->
+<!--    <input type="submit">-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
