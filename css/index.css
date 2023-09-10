@@ -492,6 +492,8 @@ body{
     border-style: solid;
     border-width: 2px;
     border-color: gainsboro;
+    color: black;
+
 }
 .blure button:hover{
     cursor: pointer;
