@@ -3,10 +3,11 @@ body{
     padding: 0;
     font-family: 'Manrope', Arial, sans-serif;
     padding-top: 120px;
+    padding-bottom: 50px;
 
 }
 .menu-header{
-    width: 60%;
+    width: calc(100% - 170px);
 }
 .header-div{
     width: 100%;
@@ -52,8 +53,9 @@ body{
     padding-left: 10px;
 }
 .form-for-add-service{
-    width: 500px;
+    width: 37%;
 }
+
 .container-for-form{
     display: flex;
     width: 100%;
@@ -100,3 +102,22 @@ body{
     opacity: 1;
     cursor: pointer;
 }
+@media(max-width: 1000px){
+    .form-for-add-service {
+        width: 50%;
+    }
+}
+@media (max-width: 650px){
+    .form-for-add-service {
+        width: 70%;
+    }
+     .menu-header {
+         width: 100%;
+     }
+ }
+ @media (max-width: 450px){
+     .form-for-add-service {
+         width: 80%;
+     }
+
+  }

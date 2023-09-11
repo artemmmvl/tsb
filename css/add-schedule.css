@@ -2,9 +2,10 @@ body{
     margin: 0;
     padding: 0;
     padding-top: 100px;
+    padding-bottom: 50px;
 }
-.menu-header{
-    width: 60%;
+.menu-header {
+    width: calc(100% - 170px);
 }
 .form-for-add-schedule{
     display: flex;
@@ -89,7 +90,7 @@ fieldset{
 
     display: flex;
     height: 80px;
-    width: 80%;
+    width: calc(100% - 50px);
     background-color: whitesmoke;
     border-radius: 60px;
     padding-left: 30px;
@@ -133,7 +134,7 @@ fieldset{
 }
 .delete-service, .select-service{
     height: 100%;
-    width: 20%;
+    width: 30px;
 }
 .delete-service img, .select-service img{
     margin-top: 30px;
@@ -151,17 +152,7 @@ fieldset{
 .all-schedules details{
     width: 30%;
 }
-@media (max-width: 800px) {
-    .form-for-add-schedule{
-        display: block;
-        width: 100%;
-    }
-    fieldset{
-        width: 80%;
-        margin-left: 10%;
-    }
 
-}
 
 
 
@@ -191,7 +182,7 @@ fieldset{
     margin-top: 30px;
     display: flex;
     height: 80px;
-    width: 80%;
+    width: calc(100% - 50px);
     background-color: whitesmoke;
     border-radius: 60px;
     padding-left: 30px;
@@ -233,9 +224,10 @@ fieldset{
 
 }
 .all-schedules{
-    margin-left: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-top: 20px;
-    width: 80%;
+    width: calc(100% - 20px);
     display: none;
 }
 .schedule-in-day{
@@ -360,5 +352,127 @@ fieldset{
 }
 .info-about-service:hover{
     cursor: pointer;
+}
+
+@media (max-width: 650px){
+    .menu-header {
+        width: 100%;
+    }
+}
+@media(max-width: 1050px){
+    .text-about-service div{
+        font-size: 16px;
+    }
+    .date{
+        width: 30%;
+    }
+    .button-for-send-service-and-date{
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 20px;
+    }
+    .info-about-service, .button-for-select-schedules{
+            width: calc(100% - 60px);
+    }
+    .button-select-schedules div{
+        font-size: 20px;
+        margin-left: 10%;
+    }
+
+
+}
+
+@media (max-width: 900px) {
+    .form-for-add-schedule{
+        display: block;
+        width: 100%;
+    }
+    .date{
+            width: 17.5%;
+    }
+    fieldset{
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+    }
+    .info-about-service, .button-for-select-schedules, .button-select-schedules, .all-schedules{
+                width: 80%;
+    }
+
+
+}
+@media(max-width: 700px){
+    .date {
+        width: 22%;
+    }
+}
+
+@media(max-width: 570px){
+    .date {
+        width: 30%;
+    }
+    fieldset{
+        width: 95%;
+        margin-left:2.5%;
+        padding:0;
+    }
+    .text-about-service div{
+        font-size: 16px;
+    }
+    .text-about-service .price{
+        font-size:16px;
+    }
+    .text-about-service{
+        margin-left:5px;
+    }
+    .change-service, .select-service{
+        width:30px;
+    }
+    .change-service img, .select-service img {
+        margin-left:10px;
+    }
+    .all-schedules{
+        width: calc(100% - 50px);
+    }
+    .date-appointment{
+        width:30%;
+    }
+    .time{
+        width: 22%;
+    }
+    .button-for-send-service-and-date{
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 20px;
+    }
+    .info-about-client{
+        margin-top: 40px;
+
+        width: 90%;
+        margin-left: 5%;
+    }
+    .button-for-send-form {
+        margin-bottom: 40px;
+    }
+    .button-select-schedules p {
+        margin-left: -10px;
+         font-size: 19px;
+    }
+    .all-schedules{
+    margin-left: 0;}
+}
+@media (max-width: 400px){
+     .text-about-service div{
+        font-size: 14px;
+     }
+}
+@media(max-width: 350px){
+     .button-select-schedules p {
+
+            font-size: 18px;
+     }
 }
 
