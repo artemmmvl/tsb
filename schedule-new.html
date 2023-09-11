@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Запись</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/add-schedule.css">
+
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="img-logo">
+            <a href="index.html">
+                <img src="img/page/logotip3.png" alt="логотип">
+            </a>
+        </div>
+        <nav class="menu-header">
+            <ul>
+                <li>
+                    <a href="schedule.html">РАСПИСАНИЕ</a>
+                </li>
+                <li>
+                    <a href="schedule-new.html">ДОБАВИТЬ РАСПИСАНИЕ</a>
+                </li>
+                <li>
+                    <a href="services-new.html">ДОБАВИТЬ УСЛУГУ</a>
+                </li>
+                <li>
+                    <a href="reviews-change.html">ОТЗЫВЫ</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="menu-burger">
+            <div class="before"></div>
+            <div class="center"></div>
+            <div class="after"></div>
+        </div>
+    </div>
+</header>
+<form class="form-for-add-schedule" action="/admin/schedule/new" method="post">
+    <fieldset class="services-fieldset">
+        <tr>
+        <input class="checkbox-service" type="checkbox" name="ids"  value="152">
+        <div class="info-about-service">
+            <div class="img-service-div">
+                <img src="img/service/eb82726b-6271-469c-a08a-e82412777362.IMG_0152.JPG">
+            </div>
+            <div class="text-about-service">
+                <div class="name">Коррекция бровей пинцетом, воском</div>
+                <div class="price">25 Br</div>
+            </div>
+            <div class="delete-service">
+                <img src="img/page/cancel.png">
+            </div>
+            <div class="select-service">
+                <img src="img/page/select.png">
+            </div>
+        </div>
+        </tr>
+        <tr>
+        <input class="checkbox-service" type="checkbox" name="ids"  value="153">
+        <div class="info-about-service">
+            <div class="img-service-div">
+                <img src="img/service/17c43976-4cf3-495f-bfb9-24ff1bcac6ff.foto2.jpg">
+            </div>
+            <div class="text-about-service">
+                <div class="name">Окрашивание бровей и коррекция пинцетом, воском</div>
+                <div class="price">35 Br</div>
+            </div>
+            <div class="delete-service">
+                <img src="img/page/cancel.png">
+            </div>
+            <div class="select-service">
+                <img src="img/page/select.png">
+            </div>
+        </div>
+        </tr>
+        <tr>
+        <input class="checkbox-service" type="checkbox" name="ids"  value="154">
+        <div class="info-about-service">
+            <div class="img-service-div">
+                <img src="img/service/3945b5e6-1175-42a0-a8d8-dbf43f3582dc.foto3.jpg">
+            </div>
+            <div class="text-about-service">
+                <div class="name">Окрашивание ресниц</div>
+                <div class="price">15 Br</div>
+            </div>
+            <div class="delete-service">
+                <img src="img/page/cancel.png">
+            </div>
+            <div class="select-service">
+                <img src="img/page/select.png">
+            </div>
+        </div>
+        </tr>
+        <tr>
+        <input class="checkbox-service" type="checkbox" name="ids"  value="155">
+        <div class="info-about-service">
+            <div class="img-service-div">
+                <img src="img/service/c5d68cd4-c3bd-49d4-b3fe-3f2f8fad113f.IMG_0098.JPG">
+            </div>
+            <div class="text-about-service">
+                <div class="name">Окрашивание бровей, коррекция и окрашивание ресниц</div>
+                <div class="price">45 Br</div>
+            </div>
+            <div class="delete-service">
+                <img src="img/page/cancel.png">
+            </div>
+            <div class="select-service">
+                <img src="img/page/select.png">
+            </div>
+        </div>
+        </tr>
+    </fieldset>
+    <fieldset>
+        <div class="button-select-schedules">
+            <img src="img/page/calendar.png">
+            <div class="text-in-button-select-schedules">
+                <p>Выбрать даты и время</p>
+            </div>
+        </div>
+        <div class="all-schedules">
+            <div class="schedule-in-day" >
+                <tr>
+                    <div class="date"><p>18 сен</p></div>
+                    <div class="times" >
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-18T10:00" value="2023-09-18T10:00" name="dates">
+                            <div class="time-block">
+                                <p>10:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-18T11:00" value="2023-09-18T11:00" name="dates">
+                            <div class="time-block">
+                                <p>11:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-18T12:00" value="2023-09-18T12:00" name="dates">
+                            <div class="time-block">
+                                <p>12:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-18T13:00" value="2023-09-18T13:00" name="dates">
+                            <div class="time-block">
+                                <p>13:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-18T18:00" value="2023-09-18T18:00" name="dates">
+                            <div class="time-block">
+                                <p>18:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-18T19:00" value="2023-09-18T19:00" name="dates">
+                            <div class="time-block">
+                                <p>19:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-18T20:00" value="2023-09-18T20:00" name="dates">
+                            <div class="time-block">
+                                <p>20:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="date"><p>19 сен</p></div>
+                    <div class="times" >
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-19T10:00" value="2023-09-19T10:00" name="dates">
+                            <div class="time-block">
+                                <p>10:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-19T11:00" value="2023-09-19T11:00" name="dates">
+                            <div class="time-block">
+                                <p>11:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-19T12:00" value="2023-09-19T12:00" name="dates">
+                            <div class="time-block">
+                                <p>12:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-19T13:00" value="2023-09-19T13:00" name="dates">
+                            <div class="time-block">
+                                <p>13:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-19T14:00" value="2023-09-19T14:00" name="dates">
+                            <div class="time-block">
+                                <p>14:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-19T16:00" value="2023-09-19T16:00" name="dates">
+                            <div class="time-block">
+                                <p>16:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-19T18:00" value="2023-09-19T18:00" name="dates">
+                            <div class="time-block">
+                                <p>18:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-19T19:00" value="2023-09-19T19:00" name="dates">
+                            <div class="time-block">
+                                <p>19:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-19T20:00" value="2023-09-19T20:00" name="dates">
+                            <div class="time-block">
+                                <p>20:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="date"><p>20 сен</p></div>
+                    <div class="times" >
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-20T10:00" value="2023-09-20T10:00" name="dates">
+                            <div class="time-block">
+                                <p>10:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-20T11:00" value="2023-09-20T11:00" name="dates">
+                            <div class="time-block">
+                                <p>11:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-20T12:00" value="2023-09-20T12:00" name="dates">
+                            <div class="time-block">
+                                <p>12:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-20T13:00" value="2023-09-20T13:00" name="dates">
+                            <div class="time-block">
+                                <p>13:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-20T14:00" value="2023-09-20T14:00" name="dates">
+                            <div class="time-block">
+                                <p>14:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-20T15:00" value="2023-09-20T15:00" name="dates">
+                            <div class="time-block">
+                                <p>15:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-20T16:00" value="2023-09-20T16:00" name="dates">
+                            <div class="time-block">
+                                <p>16:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-20T17:00" value="2023-09-20T17:00" name="dates">
+                            <div class="time-block">
+                                <p>17:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-20T18:00" value="2023-09-20T18:00" name="dates">
+                            <div class="time-block">
+                                <p>18:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-20T19:00" value="2023-09-20T19:00" name="dates">
+                            <div class="time-block">
+                                <p>19:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-20T20:00" value="2023-09-20T20:00" name="dates">
+                            <div class="time-block">
+                                <p>20:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="date"><p>21 сен</p></div>
+                    <div class="times" >
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-21T11:00" value="2023-09-21T11:00" name="dates">
+                            <div class="time-block">
+                                <p>11:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-21T14:00" value="2023-09-21T14:00" name="dates">
+                            <div class="time-block">
+                                <p>14:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-21T15:00" value="2023-09-21T15:00" name="dates">
+                            <div class="time-block">
+                                <p>15:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-21T16:00" value="2023-09-21T16:00" name="dates">
+                            <div class="time-block">
+                                <p>16:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-21T17:00" value="2023-09-21T17:00" name="dates">
+                            <div class="time-block">
+                                <p>17:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-21T18:00" value="2023-09-21T18:00" name="dates">
+                            <div class="time-block">
+                                <p>18:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-21T19:00" value="2023-09-21T19:00" name="dates">
+                            <div class="time-block">
+                                <p>19:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-21T20:00" value="2023-09-21T20:00" name="dates">
+                            <div class="time-block">
+                                <p>20:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="date"><p>22 сен</p></div>
+                    <div class="times" >
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-22T10:00" value="2023-09-22T10:00" name="dates">
+                            <div class="time-block">
+                                <p>10:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-22T11:00" value="2023-09-22T11:00" name="dates">
+                            <div class="time-block">
+                                <p>11:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-22T12:00" value="2023-09-22T12:00" name="dates">
+                            <div class="time-block">
+                                <p>12:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-22T13:00" value="2023-09-22T13:00" name="dates">
+                            <div class="time-block">
+                                <p>13:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-22T14:00" value="2023-09-22T14:00" name="dates">
+                            <div class="time-block">
+                                <p>14:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-22T15:00" value="2023-09-22T15:00" name="dates">
+                            <div class="time-block">
+                                <p>15:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-22T16:00" value="2023-09-22T16:00" name="dates">
+                            <div class="time-block">
+                                <p>16:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-22T17:00" value="2023-09-22T17:00" name="dates">
+                            <div class="time-block">
+                                <p>17:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-22T18:00" value="2023-09-22T18:00" name="dates">
+                            <div class="time-block">
+                                <p>18:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-22T19:00" value="2023-09-22T19:00" name="dates">
+                            <div class="time-block">
+                                <p>19:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-22T20:00" value="2023-09-22T20:00" name="dates">
+                            <div class="time-block">
+                                <p>20:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="date"><p>23 сен</p></div>
+                    <div class="times" >
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-23T10:00" value="2023-09-23T10:00" name="dates">
+                            <div class="time-block">
+                                <p>10:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-23T11:00" value="2023-09-23T11:00" name="dates">
+                            <div class="time-block">
+                                <p>11:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-23T12:00" value="2023-09-23T12:00" name="dates">
+                            <div class="time-block">
+                                <p>12:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-23T13:00" value="2023-09-23T13:00" name="dates">
+                            <div class="time-block">
+                                <p>13:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-23T14:00" value="2023-09-23T14:00" name="dates">
+                            <div class="time-block">
+                                <p>14:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-23T15:00" value="2023-09-23T15:00" name="dates">
+                            <div class="time-block">
+                                <p>15:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-23T16:00" value="2023-09-23T16:00" name="dates">
+                            <div class="time-block">
+                                <p>16:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-23T17:00" value="2023-09-23T17:00" name="dates">
+                            <div class="time-block">
+                                <p>17:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-23T18:00" value="2023-09-23T18:00" name="dates">
+                            <div class="time-block">
+                                <p>18:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-23T19:00" value="2023-09-23T19:00" name="dates">
+                            <div class="time-block">
+                                <p>19:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-23T20:00" value="2023-09-23T20:00" name="dates">
+                            <div class="time-block">
+                                <p>20:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="date"><p>24 сен</p></div>
+                    <div class="times" >
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-24T10:00" value="2023-09-24T10:00" name="dates">
+                            <div class="time-block">
+                                <p>10:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-24T11:00" value="2023-09-24T11:00" name="dates">
+                            <div class="time-block">
+                                <p>11:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-24T12:00" value="2023-09-24T12:00" name="dates">
+                            <div class="time-block">
+                                <p>12:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-24T13:00" value="2023-09-24T13:00" name="dates">
+                            <div class="time-block">
+                                <p>13:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-24T14:00" value="2023-09-24T14:00" name="dates">
+                            <div class="time-block">
+                                <p>14:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-24T15:00" value="2023-09-24T15:00" name="dates">
+                            <div class="time-block">
+                                <p>15:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-24T16:00" value="2023-09-24T16:00" name="dates">
+                            <div class="time-block">
+                                <p>16:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-24T17:00" value="2023-09-24T17:00" name="dates">
+                            <div class="time-block">
+                                <p>17:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-24T18:00" value="2023-09-24T18:00" name="dates">
+                            <div class="time-block">
+                                <p>18:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-24T19:00" value="2023-09-24T19:00" name="dates">
+                            <div class="time-block">
+                                <p>19:00</p>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <input type="checkbox" id="2023-09-24T20:00" value="2023-09-24T20:00" name="dates">
+                            <div class="time-block">
+                                <p>20:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </tr>
+            </div>
+        </div>
+        <button class="button-for-send-service-and-date">Сохранить</button>
+    </fieldset>
+</form>
+<script src="script/menu-header.js"></script>
+
+<script>
+    var selectServices=document.querySelectorAll(".info-about-service")
+    console.log(selectServices.length)
+    let inputServices=document.querySelectorAll(".info-about-service input")
+    for(let i=0;i<selectServices.length;i++){
+        selectServices[i].onclick=function (){
+            inputService=this.previousElementSibling
+            if(inputService.checked){
+                console.log(inputService.checked)
+                this.querySelector(".select-service").style.display="block"
+                this.querySelector(".delete-service").style.display="none"
+
+            }
+            else {
+                console.log(inputService.checked)
+                this.querySelector(".select-service").style.display="none"
+                this.querySelector(".delete-service").style.display="block"
+            }
+            inputService.checked=!inputService.checked
+        }
+    }
+
+
+    var checkOpenAllSchedules=false;
+    document.querySelector(".button-select-schedules").onclick=function (){
+        if(!checkOpenAllSchedules){
+            document.querySelector(".all-schedules").style.display="block"
+            checkOpenAllSchedules=true
+        }
+        else {
+            document.querySelector(".all-schedules").style.display="none"
+            checkOpenAllSchedules=false
+        }
+    }
+
+    let dates=document.querySelectorAll(".date")
+    var checkOpenDatesSchedules=new Array(dates.length);
+    console.log(checkOpenDatesSchedules)
+    for(let i=0;i<dates.length;i++){
+        dates[i].addEventListener("click",func.bind(null, i),this)
+
+    }
+    function func (i, event) {
+        block = event.currentTarget
+        console.log(checkOpenDatesSchedules[i])
+        if (!checkOpenDatesSchedules[i]) {
+            block.nextElementSibling.style.display = "flex"
+            block.style.backgroundColor = "rgba(40,40,40,0.7)"
+            block.style.color = "white"
+            block.style.fontWeight = "800"
+
+            checkOpenDatesSchedules[i] = true
+        } else {
+            block.nextElementSibling.style.display = "none"
+            block.style.backgroundColor = "white"
+            block.style.color = "black"
+            block.style.fontWeight = "400"
+
+            checkOpenDatesSchedules[i] = false
+        }
+    }
+    let checkedTimes=0
+    let timeBlocks=document.querySelectorAll(".time-block")
+    for(let i=0;i<timeBlocks.length;i++){
+        timeBlocks[i].onclick=function (){
+            if(this.previousElementSibling.checked){
+                checkedTimes--;
+            }
+            else {
+                checkedTimes++;
+            }
+            this.previousElementSibling.checked=!this.previousElementSibling.checked
+            if(checkedTimes===0){
+                document.querySelector(".button-for-send-service-and-date").style.display="none"
+
+            }
+            else {
+                document.querySelector(".button-for-send-service-and-date").style.display="block"
+
+            }
+        }
+    }
+</script>
+</body>
+</html>
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Добавить расписание</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div>-->
+<!--    <p>Добавить расписание</p>-->
+<!--    <form action="/admin/schedule/new" method="post">-->
+<!--        <div th:each="cur:${services}">-->
+<!--            <input type="checkbox" th:name="ids"  th:value="${cur.getId()}"-->
+<!--               th:text="${cur.getName()}">-->
+<!--        </div>-->
+<!--        <div th:each="cur:${schedules}">-->
+<!--            <p>FFF</p>-->
+<!--            <p th:text="${cur.get(0).getDate().getDayOfMonth()}+' июля'"></p>-->
+<!--            <div th:each="cur1:${cur}">-->
+<!--                <label th:for="${cur1.getDate()}" th:text="${cur1.getDate().getHour()}"></label>-->
+<!--                <input type="checkbox" th:name="dates" th:id="${cur1.getDate()}" th:value="${cur1.getDate()}">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <input type="submit">-->
+<!--    </form>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->

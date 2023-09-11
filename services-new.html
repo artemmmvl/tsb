@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Запись</title>
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="css/add-service.css">
+
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="img-logo">
+            <a href="index.html">
+                <img src="img/page/logotip3.png" alt="логотип">
+            </a>
+        </div>
+        <nav class="menu-header">
+              <ul>
+                <li>
+                    <a href="schedule.html">РАСПИСАНИЕ</a>
+                </li>
+                <li>
+                    <a href="schedule-new.html">ДОБАВИТЬ РАСПИСАНИЕ</a>
+                </li>
+                <li>
+                    <a href="services-new.html">ДОБАВИТЬ УСЛУГУ</a>
+                </li>
+                <li>
+                    <a href="reviews-change.html">ОТЗЫВЫ</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="menu-burger">
+            <div class="before"></div>
+            <div class="center"></div>
+            <div class="after"></div>
+        </div>
+    </div>
+</header>
+<div class="container-for-form">
+    <form class="form-for-add-service" action="/services/new" method="post" enctype="multipart/form-data">
+        <div class="div-input-text">
+            <label  for="name" >Название</label>
+            <input required type="text" placeholder="Название услуги" name="name" id="name">
+        </div>
+        <div class="div-input-text">
+            <label for="price">Цена</label>
+            <input type="number" placeholder="Цена услуги (без букв)" name="price" id="price">
+        </div>
+        <div class="div-input-text">
+            <label for="description">Описание</label>
+            <textarea placeholder="Описание услуги" name="description" id="description"></textarea>
+        </div>
+        <div class="div-input-file">
+            <label for="file">Фото:</label>
+            <input required type="file" multiple max="3" name="file" id="file">
+        </div>
+        <div class="div-input-radio">
+            <p>Тип записи:</p>
+            <div>
+                <input type="radio" value="EDUCATION" name="typeService" id="EDUCATION">
+                <label for="EDUCATION">Обучение</label>
+            </div>
+            <div>
+                <input checked type="radio" value="MAKE_BROWS"  name="typeService" id="MAKE_BROWS">
+                <label for="MAKE_BROWS">Услуга</label>
+            </div>
+        </div>
+        <div class="div-input-check">
+            <div>
+                <input type="checkbox" checked name="entry" id="true">
+                <label for="true">Есть запись?</label>
+            </div>
+
+        </div>
+
+        <button class="button-for-send-form">Добавить</button>
+    </form>
+</div>
+<script src="script/menu-header.js"></script>
+
+</body>
+</html>
