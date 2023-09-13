@@ -755,8 +755,9 @@ body{
         width: 100%;
         padding-top: 0;
         padding-left: 0;
-        padding-bottom: 10px;
         font-size: 14px;
+        padding-bottom: 10px;
+    
     }
 
     .about-me .img-me{
