@@ -72,7 +72,7 @@ input::placeholder{
 }
 @media(max-width: 750px){
 	.div-form{
-		width: calc(80% - 60px);
+		width: calc(90% - 60px);
 	
 	}
 }
