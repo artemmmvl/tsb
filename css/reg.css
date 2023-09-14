@@ -7,7 +7,7 @@ body{
 	padding-bottom: 30px;
 }
 .container{
-	
+
 	display: flex;
 	justify-content: center;
 }
@@ -61,19 +61,38 @@ input::placeholder{
 	width: 100%;
 	color: white;
 	font-size: 20px;
+
+    margin-bottom: 10px;
 }
 .div-form form>div button:hover{
 	cursor: pointer;
 }
+.div-form form> div p{
+	display: flex;
+	justify-content: center;
+
+}
+.div-form form>div p a{
+
+	font-family: sans-serif;
+	text-decoration: none;
+	color: black;
+
+}
+.div-form form>div p span{
+	font-family: sans-serif;
+	color: #FFC84D;
+	text-decoration: none;
+}
 @media(max-width: 1100px){
 	.div-form{
 	width: calc(60% - 60px);
-	
+
 }
 @media(max-width: 750px){
 	.div-form{
 		width: calc(90% - 60px);
-	
+
 	}
 }
 @media(max-width: 550px){
@@ -94,6 +113,6 @@ input::placeholder{
 @media(max-width: 350px){
 	.div-form{
 		width: calc(90% - 60px);
-	
+
 	}
 }
