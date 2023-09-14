@@ -469,6 +469,7 @@ body{
     border-width: 0px;
     border-bottom-width: 2px;
     font-size: 20px;
+    border-radius: 0;
     color: white;
     border-color: white;
     font-family: sans-serif;
