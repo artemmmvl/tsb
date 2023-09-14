@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="../style/reg.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="div-form">
+    <div class="reg-h-text">
+      <h2>Регистрация</h2>
+
+    </div>
+    <form action="/registration" method="post">
+      <div>
+        <input class="name" id="name" name="firstname" placeholder="Имя" type="text">
+      </div>
+      <div>
+        <input class="lastname" name="lastname" placeholder="Фамилия" type="text">
+      </div>
+        
+      <div>
+        <input class="email_reg" name="email" placeholder="Электронная почта" type="email">
+      </div>
+      <div>
+        <input class="phone" name="phone" placeholder="Номер телефона" type="tel">
+      </div>
+      <div>
+        <input class="password_reg" name="password" placeholder="Пароль" minlength="6" type="password">
+      </div>
+      <div>
+        <input class="password2" name="password2" placeholder="Повторите пароль" minlength="6" type="password">
+      </div>
+      <div>
+        <button class="reg_button" type="submit">Зарегистрироваться</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+
+
+</body>
+</html>
